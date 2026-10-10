@@ -11,12 +11,6 @@ with open('radars.csv', newline='\n', encoding='iso-8859-1') as csvfile:
             continue
         donnees.append(ligne)
 
-def obtenir_colonne(index: int) -> list[str]:
-    colonne = []
-    for ligne in donnees:
-        colonne.append(ligne[index])
-    return colonne
-
 class Radar:
     def __init__(self, identifiant: int, type_radar: str, date_service: str, vma: int, lat: str, long: str):
         self.identifiant = identifiant
