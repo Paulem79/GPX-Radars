@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "gpx"
+version = "2026.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d9/1e/09e708ccdb0605bc77900ec020deab902893fe51e478deb257210002a273/gpx-2026.4.0.tar.gz", hash = "sha256:ff64a5d64bebf7e32c9d38b7a135cdc40cbaa64d92f537a053b050fcea2d2f4d", size = 70510, upload-time = "2026-09-13T20:28:05.229Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7f/ac/8764e3af2c6a4016c06229e7a3acc8296b2aa25d959567f6e512af7c4745/gpx-2026.4.0-py3-none-any.whl", hash = "sha256:8bcbb4964360f20189251bd6bb83bd49014cb9a7222589d227bdecd17bd62cea", size = 77550, upload-time = "2026-09-13T20:28:04.358Z" },
+]
+
+[[package]]
+name = "gpx-radars"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "gpx" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "gpx", specifier = ">=2026.4.0" }]
